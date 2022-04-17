@@ -1,0 +1,76 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Validating login api",
+        "description": "",
+        "id": "api-testing;validating-login-api",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1893987062,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Database is connected",
+            "match": {
+              "location": "Api_test.database_is_connected()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1717449571,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls login api",
+            "match": {
+              "location": "Api_test.user_calls_login_api()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 327403406,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "Api_test.the_API_call_is_success_with_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 43070,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "status in response body is ok",
+            "match": {
+              "location": "Api_test.status_in_response_body_is_ok()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Api Testing",
+    "description": "",
+    "id": "api-testing",
+    "keyword": "Feature",
+    "uri": "features/ApiTest.feature"
+  }
+]
